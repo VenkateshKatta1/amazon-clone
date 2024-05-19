@@ -1,9 +1,9 @@
-import axios from 'axios';
+import mockProductCategories from '../mockResponse/mockProductCateogories';
+import { ProductCategory } from '../types';
 import SECRET from './../../secret';
-import { ProductCategories } from '../types';
 
 export default async function ProductCategoryList(): Promise<
-    ProductCategories[]
+    ProductCategory[] | null
 > {
     const options = {
         method: 'GET',
@@ -16,11 +16,13 @@ export default async function ProductCategoryList(): Promise<
     };
 
     try {
-        const response = await axios.request(options);
-        return response.data;
+        // const response = await axios.request(options);
+        // return response.data.data;
+
+        return mockProductCategories;
     } catch (error) {
         console.error('Failed to get product category list', error);
     }
 
-    return [];
+    return null;
 }

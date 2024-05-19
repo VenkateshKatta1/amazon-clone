@@ -1,13 +1,13 @@
 import './App.css'
-import SearchBar from './components/SearchBar'
+import HomeScreen from './components/Screens/Home'
 
 function App() {
 
 
   return (
-    <>
-      <SearchBar />
-    </>
+    <div className='mx-10'>
+      <HomeScreen />
+    </div>
   )
 }
 
