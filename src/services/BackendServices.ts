@@ -1,7 +1,10 @@
 import axios from 'axios';
 import SECRET from './../../secret';
+import { ProductCategories } from '../types';
 
-export default async function ProductCategoryList() {
+export default async function ProductCategoryList(): Promise<
+    ProductCategories[]
+> {
     const options = {
         method: 'GET',
         url: 'https://real-time-amazon-data.p.rapidapi.com/product-category-list',
@@ -18,4 +21,6 @@ export default async function ProductCategoryList() {
     } catch (error) {
         console.error('Failed to get product category list', error);
     }
+
+    return [];
 }
