@@ -1,11 +1,12 @@
 import './App.css'
+import SearchBar from './components/SearchBar'
 
 function App() {
 
 
   return (
     <>
-      <p>Hello</p>
+      <SearchBar />
     </>
   )
 }
