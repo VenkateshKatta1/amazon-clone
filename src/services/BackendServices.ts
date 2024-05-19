@@ -1,5 +1,5 @@
-import axios from 'axios'
-import SECRET from './../../secret'
+import axios from 'axios';
+import SECRET from './../../secret';
 
 export default async function ProductCategoryList() {
     const options = {
@@ -10,12 +10,12 @@ export default async function ProductCategoryList() {
             'X-RapidAPI-Key': SECRET.API_KEY,
             'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com',
         },
-    }
+    };
 
     try {
-        const response = await axios.request(options)
-        return response.data
+        const response = await axios.request(options);
+        return response.data;
     } catch (error) {
-        console.error('Failed to get product category list', error)
+        console.error('Failed to get product category list', error);
     }
 }
