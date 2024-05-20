@@ -20,7 +20,7 @@ export async function GetProductCategoryList(): Promise<
         // const response = await axios.request(options);
         // return response.data.data;
 
-        return mockProductCategories;
+        return Promise.resolve(mockProductCategories);
     } catch (error) {
         console.error('Failed to get product category list', error);
     }
@@ -43,7 +43,7 @@ export async function GetDeals(): Promise<Deal[] | null> {
         // const response = await axios.request(options);
         // return response.data.data.deals;
 
-        return mockDeals;
+        return Promise.resolve(mockDeals);
     } catch (error) {
         console.error('Failed to get deals', error);
     }
