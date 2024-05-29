@@ -1,4 +1,3 @@
-import './App.css'
 import HomeScreen from './components/Screens/Home'
 
 function App() {
