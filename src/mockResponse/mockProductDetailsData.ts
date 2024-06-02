@@ -1,0 +1,235 @@
+const mockProductDetailsData = {
+    asin: 'B0C2JZGR94',
+    product_title: 'adidas Women’s VL Court 3.0 Sneaker',
+    product_price: '$74.95',
+    product_original_price: null,
+    currency: 'USD',
+    country: 'US',
+    product_star_rating: '4.4',
+    product_num_ratings: 160,
+    product_url: 'https://www.amazon.com/dp/B0C2JZGR94',
+    product_photo: 'https://m.media-amazon.com/images/I/31Sl1DustrL.jpg',
+    product_num_offers: null,
+    product_availability: null,
+    is_best_seller: false,
+    is_amazon_choice: false,
+    climate_pledge_friendly: false,
+    sales_volume: null,
+    about_product: [],
+    product_description: 'adidas womens VL Court 3.0',
+    product_information: {
+        'Package Dimensions': '11.46 x 7.72 x 4.33 inches; 1.39 Pounds',
+        'Item model number': 'NLF94',
+        Department: 'womens',
+        'Date First Available': 'November 30, 2023',
+        Manufacturer: 'adidas',
+        ASIN: 'B0C2JZ3F8N',
+        'Best Sellers Rank':
+            "#2,149 in Clothing, Shoes & Jewelry (See Top 100 in Clothing, Shoes & Jewelry)    #59 in Women's Fashion Sneakers",
+        'Customer Reviews':
+            '4.4    4.4 out of 5 stars     \n\n                       160 ratings',
+    },
+    rating_distribution: {
+        '1': '6%',
+        '2': '2%',
+        '3': '9%',
+        '4': '12%',
+        '5': '70%',
+    },
+    product_photos: [
+        'https://m.media-amazon.com/images/I/31Sl1DustrL.jpg',
+        'https://m.media-amazon.com/images/I/413QNUvR-4L.jpg',
+        'https://m.media-amazon.com/images/I/41fQWHqC4FL.jpg',
+        'https://m.media-amazon.com/images/I/31C7Zge6AML.jpg',
+        'https://m.media-amazon.com/images/I/31MVWIVZ7lL.jpg',
+        'https://m.media-amazon.com/images/I/617NfC6ob4L.jpg',
+        'https://m.media-amazon.com/images/I/51Is0mSjJNL.jpg',
+    ],
+    product_details: {},
+    customers_say:
+        "Customers like the fit, appearance and comfort of the shoes. For example, they mention it fits well, is cute, vintage and goes with different looks. They also say it's very comfortable and easy to wear.",
+    review_aspects: {
+        Comfort: 'POSITIVE',
+        Appearance: 'POSITIVE',
+        Fit: 'POSITIVE',
+    },
+    category_path: [
+        {
+            id: '7141123011',
+            name: 'Clothing, Shoes & Jewelry',
+            link: 'https://www.amazon.com/amazon-fashion/b/ref=dp_bc_aui_C_1?ie=UTF8&node=7141123011',
+        },
+        {
+            id: '7147440011',
+            name: 'Women',
+            link: 'https://www.amazon.com/Womens-Fashion/b/ref=dp_bc_aui_C_2?ie=UTF8&node=7147440011',
+        },
+        {
+            id: '679337011',
+            name: 'Shoes',
+            link: 'https://www.amazon.com/womens-shoes/b/ref=dp_bc_aui_C_3?ie=UTF8&node=679337011',
+        },
+        {
+            id: '6127771011',
+            name: 'Athletic',
+            link: 'https://www.amazon.com/Womens-Athletic-Shoes/b/ref=dp_bc_aui_C_4?ie=UTF8&node=6127771011',
+        },
+        {
+            id: '679369011',
+            name: 'Skateboarding',
+            link: 'https://www.amazon.com/Womens-Skateboarding-Shoes/b/ref=dp_bc_aui_C_5?ie=UTF8&node=679369011',
+        },
+    ],
+    product_variations: {
+        size: [
+            {
+                asin: 'B0C2JY4JRN',
+                value: '5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JXZ7T5',
+                value: '5.5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JZF5W4',
+                value: '6',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JY6GCT',
+                value: '6.5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JZBY8T',
+                value: '7',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JY3QP7',
+                value: '7.5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JZGR94',
+                value: '8',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JXJS3M',
+                value: '8.5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYNSMM',
+                value: '9',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYZH7B',
+                value: '9.5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYWYGD',
+                value: '10',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JZQLZT',
+                value: '10.5',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JXK4FT',
+                value: '11',
+                is_available: true,
+            },
+        ],
+        color: [
+            {
+                asin: 'B0C2JYCYTX',
+                value: 'Almost Pink/White/Almost Pink',
+                photo: 'https://m.media-amazon.com/images/I/31tbRbog-eL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYYPN3',
+                value: 'Black/White/Gold Metallic',
+                photo: 'https://m.media-amazon.com/images/I/31kC+RTTJ+L._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JXPNY6',
+                value: 'Black/White/Gum',
+                photo: 'https://m.media-amazon.com/images/I/41rOlomQ0rL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYWYGD',
+                value: 'Grey/White/Silver Metallic',
+                photo: 'https://m.media-amazon.com/images/I/31rSYNA94nL._SS47_.jpg',
+                is_available: false,
+            },
+            {
+                asin: 'B0C2JZD3YN',
+                value: 'Off White/Dark Blue/Better Scarlet',
+                photo: 'https://m.media-amazon.com/images/I/31OSi+qJRRL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0CCQTM813',
+                value: 'Off White/Earth Strata/Wonder Beige',
+                photo: 'https://m.media-amazon.com/images/I/31AiPzc8ZNL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JWRRZT',
+                value: 'Putty Grey/Putty Grey/Charcoal',
+                photo: 'https://m.media-amazon.com/images/I/31OjzT229vL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JZJN6D',
+                value: 'White/Black/Grey',
+                photo: 'https://m.media-amazon.com/images/I/31XbxTWyBbL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0CCQ3WG4V',
+                value: 'White/White/Gum',
+                photo: 'https://m.media-amazon.com/images/I/21rlqG5kIFL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JZLSMF',
+                value: 'Wonder Quartz/Wonder Quartz/White',
+                photo: 'https://m.media-amazon.com/images/I/31LCmd8aCIL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0CCQ8CRLG',
+                value: 'White/Preloved Green/Alumina',
+                photo: 'https://m.media-amazon.com/images/I/31z4sa41jrL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYXB8F',
+                value: 'White/White/Grey',
+                photo: 'https://m.media-amazon.com/images/I/31If0WAx3YL._SS47_.jpg',
+                is_available: true,
+            },
+            {
+                asin: 'B0C2JYXRLH',
+                value: 'Black/Black/Gum',
+                photo: 'https://m.media-amazon.com/images/I/31RLhbI4eaL._SS47_.jpg',
+                is_available: true,
+            },
+        ],
+    },
+    is_prime: true,
+};
+
+export default mockProductDetailsData;

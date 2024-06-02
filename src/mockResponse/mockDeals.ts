@@ -58,7 +58,7 @@ const mockDeals = [
         product_asin: 'B09V3HN1KC',
     },
     {
-        deal_id: '9e021b86',
+        deal_id: '9e021b86a',
         deal_type: 'BEST_DEAL',
         deal_title:
             'Amazon Fire TV Stick 4K streaming device, more than 1.5 million movies and TV episodes, supports Wi-Fi 6, watch free & live TV',
@@ -66,7 +66,7 @@ const mockDeals = [
         deal_state: 'AVAILABLE',
         deal_url:
             'https://www.amazon.com/Amazon-Fire-TV-Stick-4K-streaming-device/dp/B0BP9MDCQZ',
-        canonical_deal_url: 'https://www.amazon.com/deal/9e021b86',
+        canonical_deal_url: 'https://www.amazon.com/deal/9e021b86a',
         deal_starts_at: '2024-05-17T07:00:00.000Z',
         deal_ends_at: '2024-05-28T15:00:00.000Z',
         deal_price: {
@@ -232,7 +232,7 @@ const mockDeals = [
         product_asin: 'B0C8T7TW4X',
     },
     {
-        deal_id: '9e021b86',
+        deal_id: '9e021b86b',
         deal_type: 'BEST_DEAL',
         deal_title:
             'Amazon Fire TV Stick, HD, sharp picture quality, fast streaming, free & live TV, Alexa Voice Remote with TV controls',
@@ -240,7 +240,7 @@ const mockDeals = [
         deal_state: 'AVAILABLE',
         deal_url:
             'https://www.amazon.com/fire-tv-stick-with-3rd-gen-alexa-voice-remote/dp/B08C1W5N87',
-        canonical_deal_url: 'https://www.amazon.com/deal/9e021b86',
+        canonical_deal_url: 'https://www.amazon.com/deal/9e021b86b',
         deal_starts_at: '2024-05-17T07:00:00.000Z',
         deal_ends_at: '2024-05-28T15:00:00.000Z',
         deal_price: {
@@ -405,7 +405,7 @@ const mockDeals = [
         product_asin: 'B0CQXMZ5BK',
     },
     {
-        deal_id: 'b9a98571',
+        deal_id: 'b9a98571a',
         deal_type: 'BEST_DEAL',
         deal_title:
             'Ring Stick Up Cam Battery | Weather-Resistant Outdoor Camera, Live View, Color Night Vision, Two-way Talk, Motion alerts, Works with Alexa | White',
@@ -413,7 +413,7 @@ const mockDeals = [
         deal_state: 'AVAILABLE',
         deal_url:
             'https://www.amazon.com/Ring-Battery-security-privacy-controls/dp/B0C5QRZ47P',
-        canonical_deal_url: 'https://www.amazon.com/deal/b9a98571',
+        canonical_deal_url: 'https://www.amazon.com/deal/b9a98571a',
         deal_starts_at: '2024-05-16T04:00:00.000Z',
         deal_ends_at: '2024-05-28T04:00:00.000Z',
         deal_price: {
@@ -434,7 +434,7 @@ const mockDeals = [
         product_asin: 'B0C5QRZ47P',
     },
     {
-        deal_id: '48fe314a',
+        deal_id: '48fe314aa',
         deal_type: 'BEST_DEAL',
         deal_title:
             'Garmin epix Pro (Gen 2) Sapphire Edition, 51mm, High Performance Smartwatch, Advanced Training Technology, Built-in Flashlight, Black',
@@ -442,7 +442,7 @@ const mockDeals = [
         deal_state: 'AVAILABLE',
         deal_url:
             'https://www.amazon.com/Garmin-Performance-Smartwatch-Technology-Flashlight/dp/B0BYFCZZ9F',
-        canonical_deal_url: 'https://www.amazon.com/deal/48fe314a',
+        canonical_deal_url: 'https://www.amazon.com/deal/48fe314aa',
         deal_starts_at: '2024-05-17T07:00:00.000Z',
         deal_ends_at: '2024-06-17T06:59:59.999Z',
         deal_price: {

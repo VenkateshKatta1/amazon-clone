@@ -17,10 +17,11 @@ function ProductCategories() {
 
     useEffect(() => {
         getProductCategories();
+        console.log('result', ProductCategories);
     }, []);
 
-    if (!productCategories?.length) {
-        return <p>Loading</p>;
+    if (!productCategories?.length && !productCategories) {
+        return <p>Loading...</p>;
     }
 
     return (
@@ -31,8 +32,7 @@ function ProductCategories() {
                     <li key={id}>
                         <a className="text-blue-600 underline" href="">
                             {name}
-                        </a>{' '}
-                        |
+                        </a>
                     </li>
                 ))}
             </ul>

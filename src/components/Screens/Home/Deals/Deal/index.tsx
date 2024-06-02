@@ -1,9 +1,21 @@
+import { useCallback } from 'react';
+import useAppStore from '../../../../../store/AppStore';
 import { Deal } from '../../../../../types';
 
+
 function DealInfo(deal: Deal) {
-    const { deal_photo, deal_title, deal_price, list_price, savings_amount, deal_badge, deal_url } = deal;
+    const { product_asin, deal_photo, deal_title, deal_price, list_price, savings_amount, deal_badge } = deal;
+
+    const { setSelectedASIN } = useAppStore((state) => ({
+        setSelectedASIN: state.setSelectedASIN
+    }))
+
+    const handleOnClick = useCallback(() => {
+        setSelectedASIN(product_asin);
+    }, [])
+
     return (
-        <a href={deal_url} target='_blank' className='flex flex-col gap-5 border px-3 py-4 w-80 h-80 bg-white hover:bg-gray-200 cursor-pointer'>
+        <button onClick={handleOnClick} className='flex flex-col gap-5 border px-3 py-4 w-80 h-80 bg-white hover:bg-gray-200 cursor-pointer'>
             <div className='flex gap-3'>
                 <div>
                     <img className='h-24 w-36' src={deal_photo} />
@@ -22,7 +34,7 @@ function DealInfo(deal: Deal) {
                 </div>
             </div>
             <p className='max-w-full text-ellipsis overflow-hidden'>{deal_title}</p>
-        </a>
+        </button >
     );
 }
 

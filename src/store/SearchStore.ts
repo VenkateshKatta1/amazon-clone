@@ -14,6 +14,7 @@ const useSearchStore = create<SearchStore>((set) => ({
     searchTerm: '',
     products: [],
     isFocused: false,
+    dealsClicked: false,
     setSearchTerm: (searchTerm: string) =>
         set(() => ({
             searchTerm,

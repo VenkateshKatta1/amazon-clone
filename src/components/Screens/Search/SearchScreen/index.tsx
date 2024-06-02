@@ -1,4 +1,6 @@
+
 function SearchScreen() {
+
   return (
     <div>
       This is Search recomendations.

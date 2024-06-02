@@ -1,9 +1,15 @@
 import axios from 'axios';
 import mockDeals from '../mockResponse/mockDeals';
 import mockProductCategories from '../mockResponse/mockProductCateogories';
-import { Deal, ProductCategory, SearchResponse } from '../types';
+import {
+    Deal,
+    ProductCategory,
+    ProductDetailsData,
+    SearchResponse,
+} from '../types';
 import SECRET from './../../secret';
 import mockSearchData from '../mockResponse/mockSearchData';
+import mockProductDetailsData from '../mockResponse/mockProductDetailsData';
 
 export async function GetProductCategoryList(): Promise<
     ProductCategory[] | null
@@ -65,9 +71,8 @@ export async function GetProducts(): Promise<SearchResponse | null> {
             product_condition: 'ALL',
         },
         headers: {
-            'x-rapidapi-key':
-                '6d5d44569emsha10d70b2d269890p1f54adjsn37387e9c6bdb',
-            'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com',
+            'X-RapidAPI-Key': SECRET.API_KEY,
+            'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com',
         },
     };
 
@@ -79,5 +84,34 @@ export async function GetProducts(): Promise<SearchResponse | null> {
     } catch (error) {
         console.error('Failed to get Products', error);
     }
+
+    return null;
+}
+
+export async function GetProductDetails(
+    asin: string | null
+): Promise<ProductDetailsData | null> {
+    const options = {
+        method: 'GET',
+        url: 'https://real-time-amazon-data.p.rapidapi.com/product-details',
+        params: {
+            asin,
+            country: 'US',
+        },
+        headers: {
+            'X-RapidAPI-Key': SECRET.API_KEY,
+            'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com',
+        },
+    };
+
+    try {
+        // const response = await axios.request(options);
+        // return response.data.data;
+
+        return Promise.resolve(mockProductDetailsData);
+    } catch (error) {
+        console.error(error);
+    }
+
     return null;
 }

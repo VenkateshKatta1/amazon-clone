@@ -76,23 +76,23 @@ const mockProductCategories = [
         id: 'fashion',
     },
     {
-        name: '   Women',
+        name: 'Women',
         id: 'fashion-womens',
     },
     {
-        name: '   Men',
+        name: 'Men',
         id: 'fashion-mens',
     },
     {
-        name: '   Girls',
+        name: 'Girls',
         id: 'fashion-girls',
     },
     {
-        name: '   Boys',
+        name: 'Boys',
         id: 'fashion-boys',
     },
     {
-        name: '   Baby',
+        name: 'Baby',
         id: 'fashion-baby',
     },
     {

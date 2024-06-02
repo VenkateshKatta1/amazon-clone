@@ -1,14 +1,8 @@
 import useSearchStore from '../../store/SearchStore';
-import Deals from '../Screens/Home/Deals';
-import SearchScreen from '../Screens/Search/SearchScreen';
-import ProductSearch from '../Screens/Search';
-import ProductCategories from '../Screens/Home/ProductCategories';
-
-
 
 function SearchBar() {
 
-  const { searchTerm, setSearchTerm, isFocused, setIsFocused } = useSearchStore((state) => ({
+  const { searchTerm, setSearchTerm, setIsFocused } = useSearchStore((state) => ({
     searchTerm: state.searchTerm,
     setSearchTerm: state.setSearchTerm,
     isFocused: state.isFocused,
@@ -18,12 +12,6 @@ function SearchBar() {
 
   const focusFunction = () => {
     setIsFocused(true);
-  }
-
-  const blurFunction = () => {
-    if (!searchTerm?.length) {
-      setIsFocused(false);
-    }
   }
 
   console.log(searchTerm);
@@ -39,18 +27,9 @@ function SearchBar() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onFocus={() => focusFunction()}
-          onBlur={() => blurFunction()}
         />
       </div>
-      <div>
-        {!isFocused ? (<div>
-          <ProductCategories />
-          <Deals />
-        </div>) : (<div>
-          <SearchScreen />
-          <ProductSearch />
-        </div>)}
-      </div>
+
     </div>
 
   );
