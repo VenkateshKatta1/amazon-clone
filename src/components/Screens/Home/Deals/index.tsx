@@ -25,7 +25,7 @@ function Deals() {
     return (
         <div className="p-5 border flex flex-col gap-5">
             <h1 className="text-blue-600 font-semibold">Deals:</h1>
-            <ul className="flex gap-4 flex-wrap">
+            <ul className="flex justify-evenly flex-wrap" >
                 {deals.map((deal) => (
                     <li key={deal.deal_id}>
                         <DealInfo {...deal} />

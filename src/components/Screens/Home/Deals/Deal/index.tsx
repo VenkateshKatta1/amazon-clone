@@ -15,10 +15,10 @@ function DealInfo(deal: Deal) {
     }, [])
 
     return (
-        <button onClick={handleOnClick} className='flex flex-col gap-5 border px-3 py-4 w-80 h-80 bg-white hover:bg-gray-200 cursor-pointer'>
+        <button onClick={handleOnClick} className='flex flex-col gap-5 border px-3 py-4 mb-3 w-80 h-80 bg-white hover:bg-gray-200 cursor-pointer'>
             <div className='flex gap-3'>
                 <div>
-                    <img className='h-24 w-36' src={deal_photo} />
+                    <img className='h-24 w-36' src={deal_photo} loading='lazy' />
                 </div>
                 <div>
                     <div className='flex gap-5'>

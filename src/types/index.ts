@@ -69,7 +69,7 @@ export type ProductData = {
     delivery: string;
 };
 
-export interface ProductDetailsData {
+export type ProductDetailsData = {
     asin: string;
     product_title: string;
     product_price: string;
@@ -97,7 +97,7 @@ export interface ProductDetailsData {
     category_path: CategoryPath[];
     product_variations: ProductVariations;
     is_prime: boolean;
-}
+};
 
 export interface ProductInformation {
     'Package Dimensions': string;

@@ -3,12 +3,10 @@ import useHomeStore from '../../../../store/HomeStore';
 import { GetProductCategoryList } from '../../../../services/BackendServices';
 
 function ProductCategories() {
-    const { productCategories, setProductCategories } = useHomeStore(
-        (state) => ({
-            productCategories: state.productCategories,
-            setProductCategories: state.setProductCategories,
-        })
-    );
+    const { productCategories, setProductCategories } = useHomeStore((state) => ({
+        productCategories: state.productCategories,
+        setProductCategories: state.setProductCategories,
+    }));
 
     const getProductCategories = useCallback(async () => {
         const result = await GetProductCategoryList();
@@ -17,10 +15,9 @@ function ProductCategories() {
 
     useEffect(() => {
         getProductCategories();
-        console.log('result', ProductCategories);
     }, []);
 
-    if (!productCategories?.length && !productCategories) {
+    if (!productCategories || !productCategories.length) {
         return <p>Loading...</p>;
     }
 
@@ -28,7 +25,7 @@ function ProductCategories() {
         <div className="p-5 border flex flex-col gap-5">
             <h1 className="text-blue-600 font-semibold">Product Categories:</h1>
             <ul className="flex gap-4 flex-wrap">
-                {productCategories.splice(5, 20).map(({ id, name }) => (
+                {productCategories.map(({ id, name }) => (
                     <li key={id}>
                         <a className="text-blue-600 underline" href="">
                             {name}

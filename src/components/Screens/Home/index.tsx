@@ -1,4 +1,3 @@
-import SearchBar from '../../SearchBar';
 import ProductCategories from './ProductCategories';
 import SearchScreen from '../Search/SearchScreen';
 import ProductSearch from '../Search';
@@ -13,16 +12,13 @@ function HomeScreen() {
     }));
     return (
         <div>
-            <SearchBar />
-            <div>
-                {!isFocused ? (<div>
-                    <ProductCategories />
-                    <Deals />
-                </div>) : (<div>
-                    <SearchScreen />
-                    <ProductSearch />
-                </div>)}
-            </div>
+            {!isFocused ? (<div>
+                <Deals />
+                <ProductCategories />
+            </div>) : (<div>
+                <SearchScreen />
+                <ProductSearch />
+            </div>)}
         </div>
     );
 }
